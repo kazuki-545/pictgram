@@ -1,0 +1,12 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'custom';
+.test{
+  font-size:40px;
+  color:red;
+  background-color:blue;
+}
+.test2{
+  font-size:200;
+  color:white;
+}
