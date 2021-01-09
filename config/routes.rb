@@ -5,6 +5,7 @@ Rails.application.routes.draw do
    get 'pages/index'
    get 'pages/help'
    get 'pages/discription'
+   get 'pages/sample01'
    
    resources :users
    

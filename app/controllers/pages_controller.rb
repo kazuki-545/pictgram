@@ -8,4 +8,7 @@ class PagesController < ApplicationController
   def discription
   end
   
+  def sample01
+  end
+  
 end
