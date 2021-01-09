@@ -7,9 +7,11 @@ Rails.application.routes.draw do
    get 'pages/discription'
    get 'pages/sample01'
    
-   resources :users
    
    get    '/login',   to: 'sessions#new'
-  post   '/login',   to: 'sessions#create'
-  delete '/logout',  to: 'sessions#destroy'
+   post   '/login',   to: 'sessions#create'
+   delete '/logout',  to: 'sessions#destroy'
+  
+  resources :users
+  resources :topics
 end
