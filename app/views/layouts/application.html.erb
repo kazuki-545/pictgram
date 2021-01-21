@@ -2,7 +2,7 @@
 <html>
   <head>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
  </head>
   <body>
     <% flash.each do |key, value| %>
@@ -21,9 +21,9 @@
                 <%= image_tag "icons/heart.png" %>
               <% end %>
             </li>
-             <li>
+            <li>
               <%= link_to new_topic_path do %>
-                <%= image_tag 'icons/camera.png' %>
+                <%= image_tag "icons/camera.png" %>
               <% end %>
             </li>
             <li>
@@ -47,6 +47,17 @@
       </div>
     </nav>
 
+
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>" role="alert"><%= value %></div>
+      <% end %>
+
     <%= yield %>
+    
+    <script>
+      $(function(){
+        $(".alert").fadeOut(5000);
+      });
+    </script>
 
 </html>

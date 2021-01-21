@@ -5,8 +5,10 @@ class FavoritesController < ApplicationController
 
   def create
     favorite = Favorite.new
+    #binding.pry
     favorite.user_id = current_user.id
     favorite.topic_id = params[:topic_id]
+    
 
     if favorite.save
       redirect_to topics_path, success: 'お気に入りに登録しました'

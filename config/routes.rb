@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-  get 'topics/new'
-  get 'users/new'
   root 'pages#index'
    get 'pages/help'
    get 'pages/index'
-   get 'pages/help'
    get 'pages/discription'
    get 'pages/sample01'
    

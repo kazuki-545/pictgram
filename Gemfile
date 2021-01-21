@@ -43,6 +43,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -60,7 +61,7 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-  gem 'jquery-rails'
+  
   
 end
 
@@ -73,3 +74,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
  gem 'bootstrap-sass'
  gem 'bcrypt'
  gem "carrierwave"
+ gem 'jquery-rails'
+ gem 'fog-aws'
