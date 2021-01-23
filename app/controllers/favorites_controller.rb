@@ -5,7 +5,6 @@ class FavoritesController < ApplicationController
 
   def create
     favorite = Favorite.new
-    #binding.pry
     favorite.user_id = current_user.id
     favorite.topic_id = params[:topic_id]
     

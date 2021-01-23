@@ -15,6 +15,9 @@
           <span><%= image_tag "icons/logo.png", class: "navbar-brand" %></span>
         <% end %>
         <ul class="nav navbar-nav navbar-right">
+          <li class="text-white">
+            <%= session[:user_id]%>
+          </li>
           <% if logged_in? %>
             <li>
               <%= link_to favorites_index_path do %>
@@ -27,7 +30,7 @@
               <% end %>
             </li>
             <li>
-              <%= link_to logout_path, method: :delete do %>
+              <%= button_to logout_path, method: :delete do %>
                 <%= image_tag "icons/logout.png" %>
               <% end %>
             </li>
