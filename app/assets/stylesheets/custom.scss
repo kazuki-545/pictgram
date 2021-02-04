@@ -1,5 +1,5 @@
 h1, h2 {
-  font-weight: 100;
+  font-weight: 150;
 }
 
 .text-white {
@@ -53,6 +53,17 @@ h1, h2 {
   background-color: #464646;
 }
 
+.angel-hero-wrapper {
+  width: 100vw;
+  height: 150vh;
+  background-image: url('angel.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
 
 .top-hero-container {
   padding-top: 220px;
@@ -60,7 +71,8 @@ h1, h2 {
     font-size: 56px;
     margin-bottom: 20px;
   }
-
+  
+ 
   h2 {
     margin-bottom: 60px;
   }

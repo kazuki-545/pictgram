@@ -1,14 +1,4 @@
 class PagesController < ApplicationController
-  def index
+  def sample02
   end
-  
-  def help
-  end
-  
-  def discription
-  end
-  
-  def sample01
-  end
-  
 end
