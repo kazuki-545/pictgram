@@ -11,6 +11,7 @@ Rails.application.routes.draw do
    get    '/login',   to: 'sessions#new'
    post   '/login',   to: 'sessions#create'
    delete '/logout',  to: 'sessions#destroy'
+   delete '/users_destroy', to: 'users#destroy'
   
   resources :users
   resources :topics
