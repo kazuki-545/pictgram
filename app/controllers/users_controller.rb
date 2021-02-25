@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   end
   
   def destroy
-    if @user= User.find_by(id: session[:user_id])
+    if @user= User.find_by(id: session[:user_id]) 
       @user.destroy
       flash[:success]
      redirect_to pages_index_path, success: '退会が完了しました'
